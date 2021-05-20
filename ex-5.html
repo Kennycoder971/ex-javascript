@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+</head>
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid;
+        }
+        tr {
+            border-bottom: 1px solid;
+        }
+        td {
+            padding: 1rem;
+        }
+        td:nth-child(even) {
+            
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <h1>Exercice 5</h1>
+    <table>
+
+    </table>
+    <script>
+        const tableau = document.querySelector('table')
+        premiereLigne(tableau)
+        for (let i = 1; i < 10; i++) {
+            
+            const ligne = document.createElement('tr')
+            const colonne1 = document.createElement('td')
+            colonne1.textContent = i
+            ligne.appendChild(colonne1)
+            for (let j = 1; j < 10; j++) {
+                const colonne = document.createElement('td')
+                colonne.textContent = i * j
+                ligne.appendChild(colonne)
+            }
+            tableau.appendChild(ligne)
+            
+        }
+
+
+        function premiereLigne (element) {
+          
+                const ligne = document.createElement('tr')
+                const colonne1 = document.createElement('td')
+                colonne1.textContent = 'x'
+                ligne.appendChild(colonne1)
+               
+                for (let i = 1; i < 10; i++) {
+                    const colonne = document.createElement('td')
+                    colonne.textContent = i
+                    ligne.appendChild(colonne)
+                }
+
+                element.appendChild(ligne)
+        }
+
+    </script>
+</body>
+</html>

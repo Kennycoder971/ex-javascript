@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3</title>
+</head>
+<body>
+    <h1>Exercice 3</h1>
+
+    <script>
+        function chekAge (){
+            let age = Number(prompt('Entrez un age valide'))
+            while(isNaN(age) || age < 1){
+                alert("l'age est érroné")
+                age = Number(prompt('Entrez un age valide'))
+            }
+
+            alert('Age valide')
+        }
+
+        chekAge()
+      
+    </script>
+</body>
+</html>

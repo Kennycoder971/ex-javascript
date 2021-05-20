@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js" defer></script>
+    <title>Document</title>
+</head>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    table td {
+        border: 1px solid;
+        padding: .5rem;
+    }
+</style>
+<body>
+    <h1>Input range</h1>
+
+    <table>
+        <tr>
+            <td>Couleur de fond(rgb)</td>
+            <td>
+                <span class="start">0</span>
+                <input type="range" id="bg-color" min="0" max="255" value="0">
+                <span class="end">255</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Padding</td>
+            <td>
+                <span class="start">0</span>
+                <input type="range" name="padding" id="padding" min="0" max="30" value="0">
+                <span class="end">30</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td>
+                <span class="start">0</span>
+                <input type="range" name="height" id="height" min="0" max="200" value="0">
+                <span class="end">200</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Width</td>
+            <td>
+                <span class="start">0</span>
+                <input type="range" name="width" id="width" min="0" max="200" value="0">
+                <span class="end">255</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Arrondi</td>
+            <td>
+                <span class="start">0</span>
+                <input type="range" name="borderRadius" id="border-radius" min="0" max="30" value="0">
+                <span class="end">255</span>
+            </td>
+        </tr>
+        <tr>
+            <td>Rotation</td>
+            <td>
+                <span class="start">0</span>
+                <input type="range" id="rotate" min="0" max="180" value="0">
+                <span class="end">255</span>
+            </td>
+        </tr>
+    </table>
+    <h2 id="test">Titre de test</h2>
+</body>
+</html>
